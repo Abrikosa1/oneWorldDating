@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One World Dating</title>
     <link href="https://fonts.googleapis.com/css?family=Dosis:700|Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
     
@@ -13,8 +13,8 @@
         <div class="container">
             <img src="img/logo.png"  class="logo" alt="logo">
             <h1 class="header__title">Find Someone to Click With</h1>
-            <button class="header__button">Get Started 
-            </button>
+            <a href="#start" class="header__button">Get Started</a>
+  
             <div class="header-cards">
                 <div class="header-cards__card">
                     <div class="header-cards__img">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </header>
-
+    <a name="start"></a>
     <main class="main">
         <section class="welcome">
             <div class="container">
@@ -54,17 +54,17 @@
             <div class="sign-up">
                 <div class="sign-up-block">
                     <h3 class="sign-up-block__title">IT`S FREE TO JOIN</h3>
-                    <button class="sign-up-block__button sign-up-block__button_facebook">
+                    <a href="#" class="sign-up-block__button sign-up-block__button_facebook">
                         <img src="img/fb.png" alt="Facebook">
                         Sign up with Facebook
-                    </button>
+                    </a>
                     <p class="sign-up-block__divider">OR</p>
                     <form action="#" class="sign-up-block__form">
                         <input type="email" class="sign-up-block__input" placeholder="Email">
                         <input type="text" class="sign-up-block__input" placeholder="Username">
                         <input type="password" class="sign-up-block__input" placeholder="Password">
                         <input type="password" class="sign-up-block__input" placeholder="Conform Password">
-                        <button class="sign-up-block__button">Let’s Go!</button>
+                        <a href="#" type="submit" class="sign-up-block__button">Let’s Go!</a>
                     </form>
                 </div>
             </div>
@@ -74,7 +74,34 @@
             <div class="join-now__circle">
                 <h3 class="join-now__title">JOIN NOW</h3>
                 <p class="join-now__subtitle">It’s free!</p>
-                <button class="join-now__btn">GET STARTED</button>
+                <a class="join-now__btn">GET STARTED</a>
+            </div>
+
+            <div class="circles">
+                <div class="circles__circle circles__circle_flowers">
+                    <h3 class="circles__title">Send Flowers!</h3>
+                </div>
+                <div class="circles__circle circles__circle_chat-trans">
+                    <h3 class="circles__title">Chat Translation</h3>
+                </div>
+                <div class="circles__circle circles__circle_langs">
+                    <h3 class="circles__title"><p>27</p> Languages!</h3>
+                </div>
+                <div class="circles__circle circles__circle_genders">
+                    <h3 class="circles__title"><p>16</p> Genders</h3>
+                </div>
+                <div class="circles__circle circles__circle_heart">
+                    <img src="img/circles/worldwide.png" alt="">
+                </div>
+                <div class="circles__circle circles__circle_one-flower">
+                    <img src="img/circles/flower-with-leaves.png" alt="">
+                </div>
+                <div class="circles__circle circles__circle_gift">
+                    <img src="img/circles/gift.png" alt="">
+                </div>
+                <div class="circles__circle circles__circle_chat">
+                    <img src="img/circles/chat-bubbles.png" alt="">
+                </div>
             </div>
         </section>
     </main>
@@ -85,22 +112,23 @@
                 <label for="email" class="subscribe__label">Sign up for our newsletter</label>
                 <div class="subscribe__submit">
                     <input type="Email" name="email" class="subscribe__input" placeholder="Email Address">
-                    <button class="subscribe__btn">SUBSCRIBE</button>
+                    <a type="submit" class="subscribe__btn">SUBSCRIBE</a>
                 </div>
             </div>
 
             <nav class="nav">
                 <div class="container">
                     <ul class="navbar">
-                        <li class="navbar__item"><a href="" class="navbar__link">ABOUT</a></li>
-                        <li class="navbar__item"><a href="" class="navbar__link">CONTACT</a></li>
-                        <li class="navbar__item"><a href="" class="navbar__link">FAQs</a></li>
-                        <li class="navbar__item"><a href="" class="navbar__link">BLOG</a></li>
-                        <li class="navbar__item"><a href="" class="navbar__link">ONLINE SAFETY</a></li>
-                        <li class="navbar__item"><a href="" class="navbar__link">PRIVACY POLICY</a></li>
-                        <li class="navbar__item"><a href="" class="navbar__link">TERMS OF USE</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">ABOUT</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">CONTACT</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">FAQs</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">BLOG</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">ONLINE SAFETY</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">PRIVACY POLICY</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">TERMS OF USE</a></li>
                     </ul>
                 </div>
+                <div class="menu-button"></div>
             </nav>
 
             <div class="container">
@@ -144,6 +172,12 @@
             </div>
         
     </footer>
+    <div class="socials">
+        <a href="#" class="socials__item"><img src="img/socials/share.png" alt=""></a>
+        <a href="#" class="socials__item"><img src="img/socials/fb.png" alt=""></a>
+        <a href="#" class="socials__item"><img src="img/socials/inst.png" alt=""></a>
+        <a href="#" class="socials__item"><img src="img/socials/twitter.png" alt=""></a>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
