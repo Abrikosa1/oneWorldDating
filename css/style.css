@@ -1,0 +1,432 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, button, input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url("../img/bgi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 160px;
+}
+
+.header__title {
+  margin-top: 70px;
+  font-size: 80px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header__button {
+  margin-top: 70px;
+  font-family: "Dosis", sans-serif;
+  padding: 10px 25px;
+  padding-right: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  background-color: #81398b;
+  border-radius: 25px;
+  position: relative;
+  background-image: url("../img/arrow-pointing-to-right.png");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.header__button::after {
+  content: '';
+  border-radius: 30px;
+  border: 1px solid #ae80b4;
+  width: 120%;
+  height: 140%;
+  position: absolute;
+  left: -10%;
+  top: -20%;
+}
+
+.header-cards {
+  max-width: 780px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  bottom: -110px;
+}
+
+.header-cards__img {
+  background-color: #e22028;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 235px;
+  height: 220px;
+}
+
+.header-cards__title {
+  font-size: 32px;
+  color: #fff;
+  height: 110px;
+  background-color: #e44254;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main {
+  text-align: center;
+}
+
+.welcome {
+  margin-top: 240px;
+}
+
+.welcome__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome__img {
+  margin-right: 10px;
+}
+
+.welcome__title {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.welcome__subtitle {
+  font-size: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.welcome__cite {
+  font-size: 30px;
+  color: #fe4a5d;
+  text-align: end;
+}
+
+.sign-up {
+  background-image: url("../img/bgi2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.sign-up-block {
+  text-align: center;
+  border: 9px solid #e84823;
+  max-width: 465px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.sign-up-block__form {
+  max-width: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sign-up-block__title {
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.sign-up-block__button {
+  font-family: "Dosis", sans-serif;
+  max-width: 300px;
+  width: 100%;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #81398b;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+.sign-up-block__button_facebook {
+  margin-top: 40px;
+  background-color: #2f53a3;
+}
+
+.sign-up-block__button_facebook img {
+  margin-right: 5px;
+}
+
+.sign-up-block__divider {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #9b9b9b;
+}
+
+.sign-up-block__divider::before, .sign-up-block__divider::after {
+  content: "";
+  width: 45%;
+  height: 2px;
+  background-color: #dcdcdc;
+  position: absolute;
+  top: calc(50% - 0.5px);
+}
+
+.sign-up-block__divider::before {
+  left: 0;
+}
+
+.sign-up-block__divider::after {
+  right: 0;
+}
+
+.sign-up-block__input {
+  font-family: "Dosis", sans-serif;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #642f6b;
+  border-radius: 3px;
+  border: 2px solid #dcdcdc;
+  margin-bottom: 13px;
+}
+
+.sign-up-block__input:placeholder {
+  color: #642f6b;
+}
+
+.join-now {
+  background-image: url("../img/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.join-now__circle {
+  width: 370px;
+  height: 370px;
+  max-width: 370px;
+  max-height: 370px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.join-now__circle::after {
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #ae80b4;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+}
+
+.join-now__title {
+  font-size: 60px;
+}
+
+.join-now__subtitle {
+  font-size: 46px;
+}
+
+.join-now__btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#e22128), to(#f9b316));
+  background: linear-gradient(90deg, #e22128 0%, #f9b316 100%);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.subscribe__label {
+  font-size: 16px;
+  color: #00cfae;
+  margin-right: 15px;
+}
+
+.subscribe__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe__input {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  border: none;
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+  border-top: 2px solid #cdcdcd;
+  border-left: 2px solid #cdcdcd;
+  border-bottom: 2px solid #cdcdcd;
+  border-radius: 3px 0px 0px 3px;
+  width: 260px;
+}
+
+.subscribe__btn {
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00cfae;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.nav {
+  background-color: #fafafa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav .navbar__item {
+  list-style: none;
+}
+
+.nav .navbar__link {
+  text-decoration: none;
+  color: #2f1946;
+}
+
+.flags {
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.flags__img {
+  margin-right: 10px;
+}
+
+.flags__img:last-child {
+  margin-right: 0;
+}
+
+.copyright {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.copyright__text {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+
+.footer-divider {
+  max-width: 830px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
